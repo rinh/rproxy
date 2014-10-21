@@ -6,7 +6,7 @@ setHeaders = (res, path) ->
 
 app = connect()
 app.use serveStatic 'pac',
-        index : false 
+        index : ['index.htm'] 
         setHeaders : setHeaders
 
 app.listen(3000)
