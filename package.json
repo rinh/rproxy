@@ -1,0 +1,14 @@
+{
+  "name": "rproxy",
+  "version": "0.0.1",
+  "description": "proxy",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rinh/rproxy.git"
+  },
+  "author": "rinh",
+  "dependines" : {
+    "connect" : "*" ,
+    "serve-static" : "*"
+  }
+}
