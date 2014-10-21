@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pwd=`pwd`
+pid=`ps aux | grep node | grep -v grep | awk '{print $2}'`
+if [ -n "$pid" ]; then
+    kill -9 $pid
+    echo "[LOG] shutdown server... "
+fi
+
+coffee $pwd/index.coffee &
+echo "[LOG] starting server... "
